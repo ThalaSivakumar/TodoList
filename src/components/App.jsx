@@ -9,7 +9,7 @@ function App() {
     const newValue=event.target.value;
     setInputText(newValue);
   }
-
+  
   function handleClick(){
     setItems( prevItems => {
       return [...prevItems, inputText]
@@ -20,9 +20,9 @@ function App() {
   return (
     <div className="container">
       <div className="heading">
-        <h1>To-Do List</h1>
+        <h1>To-Do List V1</h1>
       </div>
-      <div >
+      <div class="heading1">
         <input onChange={handleChange} type="text" value={inputText}/>
         <button onClick={handleClick}>
           <span>Add</span>
